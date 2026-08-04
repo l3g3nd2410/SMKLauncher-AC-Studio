@@ -60,7 +60,7 @@ Built by and for the Assetto modding community.
 - Windows 10 or 11 (64-bit)
 - [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime)
 - `AC Studio.exe` in the same folder as the launcher
-- **AC Studio** → [Download here](https://bit.ly/AC-Studio)
+- **AC Studio** → [Download here](https://tinyurl.com/AC-Studio)
 
 > If the download link is unavailable, open an [Issue](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/issues) and we'll update it.
 
