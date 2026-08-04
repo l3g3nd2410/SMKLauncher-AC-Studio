@@ -6,6 +6,7 @@
 
 **The community launcher for AC Studio — open it, create, ship your mod.**
 
+[![Website](https://img.shields.io/badge/website-l3g3nd2410.github.io-blue?style=flat-square&logo=github)](https://l3g3nd2410.github.io/SMKLauncher-AC-Studio/)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-blue?style=flat-square&logo=windows)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases)
 [![Release](https://img.shields.io/github/v/release/YOUR_USERNAME/YOUR_REPO?style=flat-square&color=brightgreen&label=latest)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_REPO/total?style=flat-square&color=blue)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases)
