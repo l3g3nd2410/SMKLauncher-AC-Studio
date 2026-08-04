@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SMK Launcher — Free AC Studio Launcher for Assetto Corsa Modding</title>
+  <meta name="description" content="SMK Launcher is a free, community-built launcher for AC Studio — the Assetto Corsa modding tool. No key required. Download and start modding in seconds." />
+  <meta name="keywords" content="AC Studio, AC Studio free, AC Studio launcher, AC Studio no key, KS Editor alternative, Assetto Corsa modding tools, kn5 editor, assetto corsa mod tools, SMK Launcher" />
+  <link rel="canonical" href="https://13g3nd2410.github.io/YOUR_REPO/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SMK Launcher — Free AC Studio Launcher" />
+  <meta property="og:description" content="Community-built launcher for AC Studio. No key, no activation. Open it and start making Assetto Corsa mods." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:url" content="https://13g3nd2410.github.io/YOUR_REPO/" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SMK Launcher",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "DeveloperApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Free community launcher for AC Studio — the Assetto Corsa modding tool. Handles configuration automatically so you can focus on making mods.",
+    "url": "https://13g3nd2410.github.io/YOUR_REPO/",
+    "downloadUrl": "https://github.com/13g3nd2410/YOUR_REPO/releases/latest"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0b0b0b;
+      --surface: #111111;
+      --border:  #1e1e1e;
+      --white:   #eeeeee;
+      --gray:    #888888;
+      --muted:   #444444;
+      --accent:  #cdcdcd;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 10;
+    }
+    nav .brand { font-weight: 700; font-size: 1rem; letter-spacing: .02em; }
+    nav .links { display: flex; gap: 1.5rem; font-size: .9rem; color: var(--gray); }
+    nav .links a { color: var(--gray); }
+    nav .links a:hover { color: var(--white); text-decoration: none; }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem 4rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero img { width: 96px; height: 96px; margin-bottom: 1.5rem; }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+    .hero h1 span { color: var(--gray); font-weight: 400; }
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--gray);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+    .btn-group { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: .65rem 1.4rem;
+      border-radius: 6px;
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .btn:hover { opacity: .85; text-decoration: none; }
+    .btn-primary { background: var(--accent); color: #000; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid var(--border);
+    }
+
+    /* ── Badges ── */
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .badge {
+      font-size: .75rem;
+      padding: .25rem .65rem;
+      border-radius: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--gray);
+    }
+
+    /* ── Section ── */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      letter-spacing: -.01em;
+    }
+
+    /* ── Features ── */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .feature {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+    }
+    .feature h3 { font-size: .95rem; margin-bottom: .35rem; }
+    .feature p  { font-size: .85rem; color: var(--gray); }
+
+    /* ── How it works ── */
+    .steps { display: flex; flex-direction: column; gap: .75rem; }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+    }
+    .step-num {
+      min-width: 28px;
+      height: 28px;
+      background: var(--muted);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .step p { font-size: .9rem; color: var(--gray); margin: 0; }
+    .step p strong { color: var(--white); }
+
+    /* ── Tools table ── */
+    .tools-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    .tools-table th {
+      text-align: left;
+      padding: .6rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--gray);
+      font-weight: 600;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .tools-table td {
+      padding: .7rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--gray);
+    }
+    .tools-table td:first-child { color: var(--white); font-weight: 600; }
+    .tools-table tr:last-child td { border-bottom: none; }
+    .tools-table tbody tr:hover td { background: var(--surface); }
+
+    /* ── FAQ ── */
+    .faq { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1.3rem;
+    }
+    .faq-item h3 { font-size: .9rem; margin-bottom: .4rem; color: var(--white); }
+    .faq-item p  { font-size: .85rem; color: var(--gray); }
+
+    /* ── Download CTA ── */
+    .cta {
+      text-align: center;
+      padding: 4rem 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .cta h2 { font-size: 1.6rem; margin-bottom: .5rem; }
+    .cta p  { color: var(--gray); margin-bottom: 1.5rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      nav .links { display: none; }
+      .tools-table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <span class="brand">SMK Launcher</span>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#install">Install</a>
+    <a href="#tools">Tools</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://github.com/13g3nd2410/YOUR_REPO">GitHub</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <img src="assets/logo.png" alt="SMK Launcher logo" />
+  <h1>SMK Launcher <span>for AC Studio</span></h1>
+  <p>
+    The free, community-built launcher for <strong>AC Studio</strong> —
+    the Assetto Corsa modding tool. Open it and start creating, no activation needed.
+  </p>
+  <div class="btn-group">
+    <a class="btn btn-primary" href="https://github.com/13g3nd2410/YOUR_REPO/releases/latest">
+      Download — Free
+    </a>
+    <a class="btn btn-secondary" href="https://github.com/13g3nd2410/YOUR_REPO">
+      View on GitHub
+    </a>
+  </div>
+  <div class="badges">
+    <span class="badge">Windows 10 / 11</span>
+    <span class="badge">.NET 8</span>
+    <span class="badge">~200 KB</span>
+    <span class="badge">No install</span>
+    <span class="badge">Open source</span>
+  </div>
+</div>
+
+<!-- Features -->
+<section id="features">
+  <h2>Features</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>One-click launch</h3>
+      <p>Double-click and AC Studio opens, fully configured. No setup, no dialogs.</p>
+    </div>
+    <div class="feature">
+      <h3>Non-destructive</h3>
+      <p>Works on a temporary copy. Your original AC Studio.exe is never modified.</p>
+    </div>
+    <div class="feature">
+      <h3>Auto-cleanup</h3>
+      <p>The working copy is deleted automatically when you close AC Studio.</p>
+    </div>
+    <div class="feature">
+      <h3>Splash screen</h3>
+      <p>Minimal dark UI shows patch progress before the editor opens.</p>
+    </div>
+    <div class="feature">
+      <h3>Version detection</h3>
+      <p>Reads the AC Studio version and displays it in the window title.</p>
+    </div>
+    <div class="feature">
+      <h3>Tiny footprint</h3>
+      <p>~200 KB. No installer, no admin rights, no background processes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Installation -->
+<section id="install">
+  <h2>Installation</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <p><strong>Download AC Studio (Free)</strong> — <a href="YOUR_GOFILE_LINK_HERE">Download here</a></p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <p><strong>Download SMK Launcher</strong> — <a href="https://github.com/13g3nd2410/YOUR_REPO/releases/latest">Latest release on GitHub</a></p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <p><strong>Place both files in the same folder</strong> — <code>AC Studio.exe</code> and <code>SMKLauncher.exe</code> side by side</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <p><strong>Double-click SMKLauncher.exe</strong> — done</p>
+    </div>
+  </div>
+  <p style="margin-top:1rem; font-size:.85rem; color:var(--gray);">
+    Requires <a href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime">.NET 8 Desktop Runtime (x64)</a> — free download from Microsoft.
+  </p>
+</section>
+
+<!-- Tools landscape -->
+<section id="tools">
+  <h2>Assetto Corsa Modding Tools — Overview</h2>
+  <table class="tools-table">
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Use case</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AC Studio</td>
+        <td>Cars, tracks, animations, textures</td>
+        <td>Full-featured modern GUI — community-built</td>
+      </tr>
+      <tr>
+        <td>KS Editor</td>
+        <td>Cars, tracks, animations, textures</td>
+        <td>Official Kunos editor — older, free</td>
+      </tr>
+      <tr>
+        <td>Content Manager</td>
+        <td>Launcher, showroom, mod management</td>
+        <td>Essential community replacement for the AC launcher</td>
+      </tr>
+      <tr>
+        <td>Blender + AC Tools</td>
+        <td>3D modeling — KN5 / KSANIM</td>
+        <td>Import and export KN5 directly from Blender</td>
+      </tr>
+      <tr>
+        <td>3DSimED</td>
+        <td>KN5 editing, texture extraction</td>
+        <td>Open and edit KN5 files, export to FBX</td>
+      </tr>
+      <tr>
+        <td>Custom Shaders Patch</td>
+        <td>Graphics and physics extensions</td>
+        <td>Community patch — rain, dynamic lighting, improved physics</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <h3>Does SMK Launcher modify my AC Studio.exe?</h3>
+      <p>No. It only reads the original file to make a temporary copy. The original is never written to.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is the difference between AC Studio and KS Editor?</h3>
+      <p>KS Editor is the original official editor from Kunos Simulazioni, now outdated. AC Studio is a community-built alternative with a modern interface and more features.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does it work with KN5 files?</h3>
+      <p>Yes. AC Studio fully supports the KN5 format used by Assetto Corsa for cars and tracks.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need to reinstall the launcher after AC Studio updates?</h3>
+      <p>Usually no. The launcher adapts automatically. If a major update changes the editor's internals, a launcher update may be released.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there an AC Studio free version?</h3>
+      <p>Yes — the Free edition is available via the download link above. SMK Launcher is designed to work with this version.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does this work on Windows 10?</h3>
+      <p>Yes. Windows 10 64-bit and Windows 11 are both fully supported.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Ready to start modding?</h2>
+  <p>Free, lightweight, no strings attached.</p>
+  <div class="btn-group">
+    <a class="btn btn-primary" href="https://github.com/13g3nd2410/YOUR_REPO/releases/latest">
+      Download SMK Launcher
+    </a>
+    <a class="btn btn-secondary" href="https://github.com/13g3nd2410/YOUR_REPO">
+      GitHub Repository
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  Made for the Assetto Corsa modding community &nbsp;·&nbsp; SMK Team &nbsp;·&nbsp;
+  <a href="https://github.com/13g3nd2410/YOUR_REPO">GitHub</a>
+</footer>
+
+</body>
+</html>
