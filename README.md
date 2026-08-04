@@ -6,10 +6,10 @@
 
 **The community launcher for AC Studio — open it, create, ship your mod.**
 
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-blue?style=flat-square&logo=windows)](https://github.com/YOUR_USERNAME/YOUR_REPO/releases)
-[![Release](https://img.shields.io/github/v/release/YOUR_USERNAME/YOUR_REPO?style=flat-square&color=brightgreen&label=latest)](https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_REPO/total?style=flat-square&color=blue)](https://github.com/YOUR_USERNAME/YOUR_REPO/releases)
-[![Made for modding](https://img.shields.io/badge/made%20for-SNES%20modding-lightgrey?style=flat-square)](https://github.com/YOUR_USERNAME/YOUR_REPO)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-blue?style=flat-square&logo=windows)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases)
+[![Release](https://img.shields.io/github/v/release/YOUR_USERNAME/YOUR_REPO?style=flat-square&color=brightgreen&label=latest)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/YOUR_USERNAME/YOUR_REPO/total?style=flat-square&color=blue)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases)
+[![Made for modding](https://img.shields.io/badge/made%20for-Assetto%20modding-lightgrey?style=flat-square)](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio)
 
 </div>
 
@@ -48,7 +48,7 @@ Built by and for the Assetto modding community.
 
 ## Download
 
-→ **[Latest Release](https://github.com/YOUR_USERNAME/YOUR_REPO/releases/latest)**
+→ **[Latest Release](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/releases/latest)**
 
 | File | Description |
 |---|---|
@@ -130,8 +130,8 @@ Yes, the launcher is entirely optional. It doesn't change anything about AC Stud
 
 Issues and pull requests are welcome.
 
-- **Bug reports** → [Open an issue](https://github.com/YOUR_USERNAME/YOUR_REPO/issues)
-- **Questions** → [Discussions](https://github.com/YOUR_USERNAME/YOUR_REPO/discussions)
+- **Bug reports** → [Open an issue](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/issues)
+- **Questions** → [Discussions](https://github.com/l3g3nd2410/SMKLauncher-AC-Studio/discussions)
 
 ---
 
