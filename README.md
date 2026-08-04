@@ -17,9 +17,9 @@
 
 ## What is SMK Launcher?
 
-**SMK Launcher** is a lightweight, community-built launcher for **AC Studio** — the SNES/SPC music editor widely used in game modding. It handles setup automatically so you can open the editor and start working immediately, without any configuration steps.
+**SMK Launcher** is a lightweight, community-built launcher for **AC Studio** — It handles setup automatically so you can open the editor and start working immediately, without any configuration steps.
 
-Built by and for the SNES modding community.
+Built by and for the Assetto modding community.
 
 ---
 
@@ -96,15 +96,12 @@ The original `AC Studio.exe` is read-only from the launcher's perspective — it
 
 ## AC Studio & Related Tools — Community Overview
 
-If you're getting into SNES/SPC music modding, here's the landscape:
+If you're getting into Assetto modding, here's the landscape:
 
 | Tool | Use case | Notes |
 |---|---|---|
-| **AC Studio** | SNES / SPC music editing | Full-featured GUI, the go-to for most modders |
-| **KS Editor** | SNES / SPC music editing | Alternative to AC Studio, similar workflow |
-| **AddmusicK** | Super Mario World music | CLI-based, standard for SMW hacks |
-| **OpenMPT** | General tracker | Multi-format, great for exporting |
-| **SNESSOR 95** | SPC playback / editing | Lightweight SPC tool |
+| **AC Studio** | Assetto Cars / Maps / Animations / Textures editing | Full-featured GUI, the go-to for most modders |
+| **KS Editor** | Assetto Cars / Maps / Animations / Textures editing | Alternative to AC Studio, similar workflow, older free version |
 
 > SMK Launcher lowers the barrier to entry for AC Studio so new modders can get started quickly.
 
@@ -123,9 +120,6 @@ AC Studio supports the same project formats as KS Editor in most cases. Check AC
 
 **Q: Will this work on Windows 10?**
 Yes — Windows 10 64-bit and Windows 11 are both supported.
-
-**Q: Can I use this for Super Mario World, Super Mario Kart, or other SNES game mods?**
-Yes. AC Studio and this launcher are format-agnostic — any SNES project that uses the SPC audio format works.
 
 **Q: Can I run the original AC Studio without the launcher?**
 Yes, the launcher is entirely optional. It doesn't change anything about AC Studio itself.
@@ -153,6 +147,6 @@ This project is provided as-is, for educational and community modding purposes.
 
 <div align="center">
 
-Made with ♥ for the SNES modding community &nbsp;·&nbsp; **SMK Team**
+Made with ♥ for the Assetto modding community &nbsp;·&nbsp; **SMK Team**
 
 </div>
