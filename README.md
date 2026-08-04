@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="SMK Launcher Logo" width="120"/> 
+<img src="assets/logo.png" alt="SMK Launcher Logo" width="120"/>
 
 # SMK Launcher — AC Studio
 
