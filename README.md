@@ -103,8 +103,12 @@ If you're getting into Assetto modding, here's the landscape:
 
 | Tool | Use case | Notes |
 |---|---|---|
-| **AC Studio** | Assetto Cars / Maps / Animations / Textures editing | Full-featured GUI, the go-to for most modders |
-| **KS Editor** | Assetto Cars / Maps / Animations / Textures editing | Alternative to AC Studio, similar workflow, older free version |
+| **AC Studio** | Cars, tracks, animations, textures | Full-featured modern GUI, community-built, the go-to for most modders |
+| **KS Editor** | Cars, tracks, animations, textures | Official Kunos editor, older, free — predecessor to AC Studio |
+| **Content Manager** | Launcher, showroom, mod management | Essential community replacement for the default AC launcher |
+| **Blender + AC Tools** | 3D modeling — KN5 / KSANIM | Import and export KN5 and KSANIM directly from Blender |
+| **3DSimED** | KN5 editing, texture extraction | Open and edit KN5 files, export to FBX for further editing |
+| **Custom Shaders Patch** | Graphics and physics extensions | Community patch adding rain, dynamic lighting, improved physics |
 
 > SMK Launcher lowers the barrier to entry for AC Studio so new modders can get started quickly.
 
