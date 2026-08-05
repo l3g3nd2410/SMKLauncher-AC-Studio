@@ -79,7 +79,7 @@ The launcher auto-detects `AC Studio.exe` in its own directory. No configuration
 
 | Video Tutorial |
 |:---:|
-| <video src="https://github.com/user-attachments/assets/812d76b7-8ad0-46b6-8286-b9e72046ca7b" width="100%" controls></video> |
+| <video src="https://github.com/user-attachments/assets/0d16924c-3f69-4358-9ac2-df3547271de7" width="100%" controls></video> |
 
 ---
 
