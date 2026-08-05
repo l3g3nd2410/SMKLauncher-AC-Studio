@@ -77,7 +77,9 @@ Built by and for the Assetto modding community.
 
 The launcher auto-detects `AC Studio.exe` in its own directory. No configuration file, no registry entries.
 
-<video src="https://github.com/user-attachments/assets/c79680f1-097c-420c-b84b-4efb95e87cbb.mp4" width="600" controls muted></video>
+| Video Tutorial |
+|:---:|
+| <video src="https://github.com/user-attachments/assets/812d76b7-8ad0-46b6-8286-b9e72046ca7b" width="100%" controls></video> |
 
 ---
 
